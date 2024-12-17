@@ -10,13 +10,23 @@ body {
     padding: 1rem;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: center;
+  }
+
 .nav-list li {
     display: inline;
     margin-right: 1rem;
 }
 
 .nav-list a {
-    color: white;
+    background-color: #6ba4fa;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .nav-list a:hover {
@@ -54,4 +64,5 @@ p {
 
 h1 {
     text-shadow: 2px 2px black;
+    text-align: center;
   }
