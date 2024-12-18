@@ -106,3 +106,15 @@ label {
   align-items: center;
   width: 100%;
 }
+
+.responsive-img, article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.responsive-img:hover, article img:hover {
+  transform: scale(1.1);
+}
