@@ -27,6 +27,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+    text-shadow: 2px 2px black;
 }
 
 .nav-list a:hover {
@@ -118,3 +119,93 @@ label {
 .responsive-img:hover, article img:hover {
   transform: scale(1.1);
 }
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #99CCFF;
+  position: relative;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav a:hover {
+  background-color: #6ba4fa;
+  color: black;
+}
+
+.active {
+  background-color: #99CCFF;
+  color: white;
+}
+
+#myLinks {
+  display: none;
+}
+
+/* Full-width navigation for desktop */
+@media (min-width: 481px) {
+  .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+  }
+
+  .topnav a {
+      display: block;
+  }
+
+  #myLinks {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+  }
+}
+
+/* Responsive menu for mobile */
+@media (max-width: 480px) {
+  .topnav {
+      display: block;
+  }
+
+  #myLinks {
+      flex-direction: column;
+      display: none;
+      width: 100%;
+      background-color: #6ba4fa;
+  }
+
+  .topnav .icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 14px;
+      cursor: pointer;
+  }
+
+  #myLinks a {
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+  }
+
+  #myLinks.active {
+      display: flex;
+  }
+}
+

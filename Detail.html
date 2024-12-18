@@ -6,26 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
 
 <body>
     <header class="header">
-        <h1>รายละเอียดสถานที่ท่องเที่ยว</h1>
-        <nav>
-            <div class="nav-container">
-                <ul class="nav-list">
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="Detail.html">Detail</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
+        <div class="topnav">
+            <a href="Home.html" class="active"><h1>Travel</h1></a>
+            <div id="myLinks">
+                <a href="Home.html">Home</a>
+                <a href="Detail.html">Detail</a>
+                <a href="Contact.html">Contact</a>
             </div>
-        </nav>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
     <main>
         <section>
             <h2 class="h2c">ข้อมูลของสถานที่ท่องเที่ยว</h2>
             <div class="content-box">
-                <img src="/Picture/บางแสน.jpg" alt="bangsaen beach">
+                <img class="responsive-img" src="/Picture/บางแสน.jpg" alt="bangsaen beach">
                 <!--https://s359.kapook.com/pagebuilder/167af466-4fa4-427c-9ea4-67a649b65dc7.jpg-->
                 <h2>บางแสน</h2>
                 <article>
@@ -39,7 +41,7 @@
                 </article>
             </div>
             <div class="content-box">
-                <img src="/Picture/เกาะสีชัง.jpg" alt="koh sichang">
+                <img class="responsive-img" src="/Picture/เกาะสีชัง.jpg" alt="koh sichang">
                 <!--https://img.kapook.com/u/2016/suppaporn/2016/chonburi/s03.jpg-->
                 <h2>เกาะสีชัง</h2>
                 <article>
@@ -53,7 +55,7 @@
                 </article>
             </div>
             <div class="content-box">
-                <img src="/Picture/เขาสามมุก.jpg" alt="khao sam muk">
+                <img class="responsive-img" src="/Picture/เขาสามมุก.jpg" alt="khao sam muk">
                 <!--https://www.checkinchill.com/wp-content/uploads/checkinchill-20-2-2023-60.jpg-->
                 <h2>เขาสามมุก</h2>
                 <article>
@@ -66,7 +68,7 @@
                 </article>
             </div>
             <div class="content-box">
-                <img src="/Picture/ตลาดน้ำ.jpg" alt="talad nam si pak">
+                <img class="responsive-img" src="/Picture/ตลาดน้ำ.jpg" alt="talad nam si pak">
                 <!--https://halothai.com/wp-content/uploads/2024/07/23157290_1587623194631513_3208791736560491667_o-600x400.jpg-->
                 <h2>ตลาดน้ำ 4 ภาค</h2>
                 <article>
@@ -83,7 +85,7 @@
                 </article>
             </div>
             <div class="content-box">
-                <img src="/Picture/สวนนงนุช.jpg" alt="nong nooch garden">
+                <img class="responsive-img" src="/Picture/สวนนงนุช.jpg" alt="nong nooch garden">
                 <!--https://s.isanook.com/tr/0/ui/288/1443483/S__4718816_0.jpg-->
                 <h2>สวนนงนุช</h2>
                 <article>
@@ -96,6 +98,12 @@
             </div>
         </section>
     </main>
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("myLinks");
+            x.classList.toggle("active");
+        }
+    </script>
 </body>
 <footer>
     <p>&copy; 66160151@go.buu.ac.th</p>
