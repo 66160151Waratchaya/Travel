@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="th">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
 
 <body>
     <header class="header">
-        <h1>ช่องทางการติดต่อ</h1>
-        <nav>
-            <div class="nav-container">
-                <ul class="nav-list">
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="Detail.html">Detail</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
+        <div class="topnav">
+            <a href="Home.html" class="active"><h1>Travel</h1></a>
+            <div id="myLinks">
+                <a href="Home.html">Home</a>
+                <a href="Detail.html">Detail</a>
+                <a href="Contact.html">Contact</a>
             </div>
-        </nav>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
     <main>
         <form class="content-box" action="/submit" method="POST" role="form" aria-label="แบบฟอร์มติดต่อ">
@@ -47,6 +50,12 @@
 
         </form>
     </main>
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("myLinks");
+            x.classList.toggle("active");
+        }
+    </script>
 </body>
 <footer role="contentinfo">
     <p>&copy; 66160151@go.buu.ac.th</p>
